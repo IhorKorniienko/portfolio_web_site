@@ -3,3 +3,4 @@ prepare for the trip
 take the car
 get up at 8 am tomorrow
 meeting tomorrow
+master coding skills in python
