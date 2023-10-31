@@ -36,7 +36,8 @@ view = go.Figure(data=bar, layout=layout)
 view.update_traces(marker=dict(color='green'))
 
 # remove gridlines for nicer view
-view.update_layout(xaxis=dict(showgrid=False))
+view.update_layout(xaxis=dict(showgrid=False, showline=True, linewidth=2, linecolor='black'),
+                   yaxis=dict(showline=True, linewidth=2, linecolor='black'))
 
 py.offline.iplot(view)
 

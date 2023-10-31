@@ -12,10 +12,10 @@ list_box = sg.Listbox(values=functions.get_todos(), key='todos',
                       enable_events=True, size=[60, 15], horizontal_scroll=True)
 
 # Adding buttons
-add_button = sg.Button("Add", font=("Times New Roman", 15), button_color="Yellow", border_width=0)
-added_buttons = [[sg.Button("Edit", font=("Times New Roman", 15), button_color="Yellow", border_width=0)],
-                 [sg.Button("Complete", font=("Times New Roman", 15), button_color="Yellow", border_width=0)],
-                 [sg.Button("Exit", font=("Times New Roman", 15), button_color="Yellow", border_width=0)]]
+add_button = sg.Button("Add", font=("Times New Roman", 15), button_color="Yellow")
+added_buttons = [[sg.Button("Edit", font=("Times New Roman", 15), button_color="Yellow")],
+                 [sg.Button("Complete", font=("Times New Roman", 15), button_color="Yellow")],
+                 [sg.Button("Exit", font=("Times New Roman", 15), button_color="Yellow")]]
 
 layout_edit_complete_exit = sg.Column(added_buttons, vertical_alignment='Top')
 
