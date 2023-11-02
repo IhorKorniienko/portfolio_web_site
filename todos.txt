@@ -1,4 +1,0 @@
-1.1 Obtain the data and read it in Pycharm
-1.2 Understand the data context 
-1.3 Crunch/clean/compute data sets 
-1.4 Visualize data outcomes by using libraries
