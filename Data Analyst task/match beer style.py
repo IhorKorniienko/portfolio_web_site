@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly as py
 
-# read the file:
+# Read the file:
 data = pd.read_csv('beer_reviews.csv', low_memory=False)
 
 # Aggregate count & mean for relevant variables
@@ -17,9 +17,6 @@ aro_appear.reset_index(inplace=True)
 aro_appear.drop(list(aro_appear.filter(regex='count')),
                 axis=1,
                 inplace=True)
-
-# aro_appear = aro_appear.drop(['review_appearance_count',
-# 'review_aroma_count'], axis=1)
 
 # Add average of combined aroma and appearance
 aro_appear['aroma_appear_mean'] = (aro_appear['review_appearance_mean'] +
@@ -98,7 +95,7 @@ layout = dict(
         title='Rating',
         hoverformat='.2f',
         autorange=True,
-        showgrid=False, ),
+        showgrid=False),
     margin=dict(l=250),
     font=dict(family='Courier New, monospace', color='dark gray'),
     legend=dict(
@@ -113,4 +110,5 @@ layout = dict(
 
 # Plot it
 fig = go.Figure(data=[p1, p2, p3], layout=layout)
-py.offline.iplot(fig)
+# Use plot instead of iplot to open in a web browser
+py.offline.plot(fig, filename='beer_style_plot.html', auto_open=True)
