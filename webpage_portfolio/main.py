@@ -18,3 +18,8 @@ with col2:
     with cross-functional teams to drive business improvements
     """
     st.info(content)
+
+
+content2 = """Here are some of the apps I have developed using Python. Don't hesitate to reach out!"""
+
+st.write(content2)
