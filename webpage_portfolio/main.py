@@ -15,7 +15,7 @@ with col2:
     foundation in object-oriented programming principles to develop scalable data solutions. Expertise in 
     Databricks SQL for data modeling and querying large datasets efficiently. Adept at visualizing data trends and 
     patterns to support strategic decision-making. Excellent communication skills with a proven ability to collaborate 
-    with cross-functional teams to drive business improvements.
+    with cross-functional teams to drive business improvements....
     """
     st.info(content)
 
